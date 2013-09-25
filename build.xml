@@ -5,6 +5,10 @@
   <property name="build.dir" location="bin" />
   <property name="dist.dir" location="dist" />
 
+  <presetdef name="javac">
+    <javac includeantruntime="false"/>
+  </presetdef>
+
   <!-- Deletes the existing build, and dist directory-->
   <target name="clean">
     <delete dir="${build.dir}" />
