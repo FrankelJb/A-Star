@@ -5,4 +5,4 @@ The A* algorithm is a path finding algorithm that calculates the cost to walk fr
 
 The git repository contains a file called 'output.txt'. This file contains the path walked by the algorithm that has been implemented here on the map in resources/src/large_map.txt.
 
-To run the algorithm, please first build the contents of the repository by running ant in the root of the directory pulled from git. The algorithm can then be run from the root directory as 'java -jar dist/Assignment2.jar *full path to map file*'.
+To run the algorithm, please first build the contents of the repository by running `ant` in the root of the directory pulled from git. The algorithm can then be run from the root directory as `java -jar dist/Assignment2.jar <full path to map file>`.
