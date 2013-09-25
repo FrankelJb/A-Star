@@ -6,11 +6,9 @@ import java.io.UnsupportedEncodingException;
 import java.util.*;
 
 /**
- * Created with IntelliJ IDEA.
  * User: jonathan
  * Date: 2013/09/17
  * Time: 3:24 PM
- * To change this template use File | Settings | File Templates.
  */
 public class Main {
 
@@ -84,9 +82,8 @@ public class Main {
                 current = current.getParent();
             }
 
-            PrintWriter writer = null;
             try {
-                writer = new PrintWriter("output.txt", "UTF-8");
+                PrintWriter writer = new PrintWriter(mapPath + ".out", "UTF-8");
                 for (int i = 0; i < outputMap.getMap().length; i++) {
                     for (int j = 0; j < outputMap.getMap()[i].length; j++) {
                         writer.print(outputMap.getMap()[i][j]);
@@ -94,6 +91,7 @@ public class Main {
                     writer.println();
                 }
                 writer.close();
+                System.out.println("Successfully created output file," + mapPath + ".out");
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             } catch (UnsupportedEncodingException e) {
